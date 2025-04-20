@@ -66,6 +66,14 @@
                 box-shadow: 0 0 0 2px white;
             }
 
+
+
+/* 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
         @media screen and (min-width: 992px) {
             .reg {
                 height: 40px;
@@ -83,6 +91,13 @@
                 z-index: 3;
             }
         }
+
+
+
+/* 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
 
         @media screen and (max-width: 991px) {
 
@@ -104,12 +119,12 @@
             }
 
             #b1 {
-                font-size: 50px;
+                font-size: 5vw;
                 align-content: center;
             }
 
             #b2 {
-                font-size: 50px;
+                font-size: 5vw;
                 align-content: center;
             }
 
@@ -146,6 +161,7 @@
 
             #hamburguesaBotton {
                 margin: 10px;
+                font-size: 7.5vw;
             }
 
             #lblUser {
@@ -259,6 +275,12 @@
                 transform: scale(1.1);
             }
 
+
+/* 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
         @media screen and (max-width: 991px) {
 
             .contP {
@@ -267,15 +289,16 @@
 
                 .contP p {
                     width: 100% !important;
-                    padding: 0 45px;
+                    padding: 0 6vw;
                 }
 
             h3 {
                 font-weight: bolder;
+                font-size: 10vw;
             }
 
             .portada p {
-                font-size: 50px;
+                font-size: 5.5vw;
             }
 
             .imagYText {
@@ -287,7 +310,7 @@
             }
 
             .portada img {
-                width: 700px !important;
+                width: 78vw !important;
             }
 
             #logoAbe {
@@ -295,13 +318,23 @@
             }
 
             .botonn {
-                font-size: 32px !important;
+                font-size: 3.5vw !important;
             }
 
 
-
+            .estilo {
+                height: 32vw;
+            }
+            
 
             /* REPETIDOR*/
+
+            .repeTrucho {
+                gap: 0!important;
+           /*      display: grid!important;
+                grid-template-columns: repeat(2, 1fr)!important;
+                width: 100%!important; */
+            }
 
             .responsive {
                 width: 100% !important;
@@ -309,45 +342,24 @@
 
 
             .tarjeta {
-                font-size: 35px;
+                font-size: 4vw;
             }
 
             .anchoCard {
-                width: 400px !important;
+                width: 41vw !important;
             }
 
             .elh5 {
-                font-size: 40px;
+                font-size: 4.5vw;
             }
 
             .imagen {
                 max-height: 461px !important;
                 max-width: 372px !important;
+                width: 38vw;
             }
 
-
-            .desple1 {
-                width: 300px !important;
-                font-size: 35px !important;
-            }
-
-            .filtros {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .busqueda {
-                font-size: 50px !important;
-                text-align: center;
-                margin: 0 60px;
-            }
-
-            .escriba {
-                font-size: 40px !important;
-                text-align: center;
-                margin: 0 60px;
-            }
-
+          
             .tclass {
                 width: 90vw !important;
                 height: 70px;
@@ -359,17 +371,22 @@
 
             /* FOOTER*/
 
+            .footer {
+                gap: 1.5vh;
+                padding: 0;
+                padding-top: 1vh;
+            }
 
             h4 {
-                font-size: 40px;
+                font-size: 5vw;
             }
 
             .divColor p {
-                font-size: 30px !important;
+                font-size: 4vw !important;
             }
 
             #loUltimo {
-                font-size: 30px !important;
+                font-size: 4vw !important;
             }
 
             .divColor img {
@@ -444,21 +461,9 @@ Realizamos envíos a todas las provincias de Argentina.
     </div>
 
 
-    <asp:ScriptManager runat="server" />
 
 
-    <asp:UpdatePanel runat="server">
-        <ContentTemplate>
-
-
-            <!-- <div style="display: flex; gap: 20px; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 50px;">
-                <asp:Label CssClass="busqueda" Text="Búsqueda por Palabra Clave" runat="server" Style="line-height: 2; font-size: 25px; font-weight: bolder;" />
-                <asp:Label CssClass="escriba" Text="Escriba la palabra y presione Enter" runat="server" Style="line-height: 2; font-size: 20px; font-family: Quicksand; font-weight: 600;" />
-                <asp:TextBox runat="server" ID="txtFiltro" CssClass="form-control tclass" AutoPostBack="true" OnTextChanged="txtFiltro_TextChanged" Style="width: 250px; border: solid 2px #e8ca01;" />
-                <asp:Label CssClass="escriba" Text="- Para volver a ver todos los productos borre la palabra y presione Enter -" runat="server" Style="line-height: 2; font-size: 20px; font-family: Quicksand; font-weight: 600;" />
-            </div> -->
-
-            <div style="display: flex; flex-wrap: wrap; gap: 50px;">
+            <div class="repeTrucho" style="display: flex; flex-wrap: wrap; gap: 50px;">
 
 
                         <div class="col d-flex  justify-content-center responsive" style="min-width: 358px;">
@@ -644,8 +649,6 @@ Realizamos envíos a todas las provincias de Argentina.
             </div>
 
 
-        </ContentTemplate>
-    </asp:UpdatePanel>
 
  <!--   FOOTER -->
 
